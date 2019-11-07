@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Campionatul Judetean de Minifotbal Alborz - Timis</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+  <div class="mr-header">
+    <img id="mr-logo-img" src="assets/logo.jpg">
+    <ul id="mr-navigation-bar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#minifotbal">Minifotbal</a></li>
+      |
+      <li class="mr-dropdown-trigger">
+        Campionat
+        <div class="mr-dropdown-options">
+          <a href="#">Regulament</a>
+          <a href="#">Clasament</a>
+          <a href="#">Program etape</a>
+        </div>
+      </li>
+      |
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <aside class="mdc-drawer">
+    <div class="mdc-drawer__header">
+      <h3 class="mdc-drawer__title">Alborz</h3>
+      <h6 class="mdc-drawer__subtitle">Campionat minifotbal</h6>
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item" href="#" aria-current="page">
+          <i class="fas fa-trophy material-icons mdc-list-item__graphic"></i>
+          <span class="mdc-list-item__text">Cupe</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="fas fa-futbol material-icons mdc-list-item__graphic"></i>
+          <span class="mdc-list-item__text">Campionat</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <i class="fas fa-address-book material-icons mdc-list-item__graphic"></i>
+          <span class="mdc-list-item__text">Contact</span>
+        </a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="mdc-drawer-app-content">
+    <table>
+      <thead>
+        <tr>
+          <th>Numar</th>
+          <th>Echipa</th>
+          <th>M</th>
+          <th>V</th>
+          <th>E</th>
+          <th>I</th>
+          <th>GM</th>
+          <th>GP</th>
+          <th>PCT</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>ZOPPAS INDUSTRIES</td>
+          <td>8</td>
+          <td>7</td>
+          <td>1</td>
+          <td>0</td>
+          <td>32</td>
+          <td>5</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>NINIROX</td>
+          <td>9</td>
+          <td>7</td>
+          <td>1</td>
+          <td>1</td>
+          <td>37</td>
+          <td>15</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

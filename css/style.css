@@ -1,0 +1,130 @@
+#mr-logo-img {
+    width: 140px;
+    height: 62px;
+}
+.mr-header {
+    background:hsl(133, 80%, 12%);
+    overflow: hidden;
+}
+.mr-header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.mr-dropdown-trigger {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.mr-header a:hover {
+    background: #ddd;
+    color: rgb(0, 0, 0);
+}  
+#mr-navigation-bar > li {
+    display: inline;
+}
+#mr-navigation-bar {
+    float: right;
+}
+.mr-dropdown-options {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.mr-dropdown-trigger:hover .mr-dropdown-options{
+    display: block;
+}
+.mr-dropdown-options a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.mr-dropdown-options a:hover {
+    background-color: #f1f1f1;
+}
+li.mr-dropdown-trigger:hover {
+    cursor: pointer;
+    background: #ddd;
+    color: rgb(0, 0, 0);
+}
+table,
+td {
+    border: 2px solid rgb(3, 88, 70);
+}
+thead,
+tfoot {
+    background: rgb(22, 75, 7);
+    color: #fff;
+}
+table {
+     margin-top: 5px; 
+}
+#mr-sidebar {
+    float: left;
+    width: 150px;
+    background: rgb(114, 209, 233);
+    padding: 0px 0px 0px 0px;
+    margin-top: 50px;
+}
+.mr-minibox {
+    border: solid 2px rgb(37, 28, 58);
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-left: 3px;
+    border-block: 7px;
+}
+h1 {
+    font-family: fantasy;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: rgb(20, 69, 160);
+    margin-bottom: 5px;
+    margin-top: 0px;
+
+}
+.mr-box {
+    color: rgb(43, 11, 187);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-position: 10px 50%;
+    padding-left: 4px;
+    font-size: .7em;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.mr-contact-item {
+    margin: 0px 0px 40px 0px;
+    border-bottom: 3px solid #0d5b28;
+}
+
+p:first-child {
+    font-size: 30px;
+}
+.mr-contact>h1 {
+    font-size: 50px;
+}
+.mr-sanction {
+    text-align: center;
+}
+.mr-sanction-item {
+    margin: 0px 0px 50px 0px;
+    border-bottom: 3px solid #008000;
+}
+.mr-sanction>h1 {
+    font-size: 50px;
+}
+p:first-child {
+    font-size: 30px;
+}
