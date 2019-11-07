@@ -6,27 +6,35 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
 
 <body>
+
   <div class="mr-header">
     <img id="mr-logo-img" src="assets/logo.jpg">
     <ul id="mr-navigation-bar">
       <li><a href="#home">Home</a></li>
       <li><a href="#minifotbal">Minifotbal</a></li>
-      |
-      <li class="mr-dropdown-trigger">
-        Campionat
-        <div class="mr-dropdown-options">
-          <a href="#">Regulament</a>
-          <a href="#">Clasament</a>
-          <a href="#">Program etape</a>
+      <li>
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger"><span>Sezon</span>
+              <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="tesla">2017-2018</span>
+              <span class="custom-option" data-value="volvo">2018-2019</span>
+              <span class="custom-option" data-value="mercedes">2019-2020</span>
+            </div>
+          </div>
         </div>
       </li>
-      |
-      <li><a href="#contact">Contact</a></li>
+      <li>
+        <div class="mr-contact-menu-item"><a href="#contact">Contact</a></div>
+      </li>
     </ul>
   </div>
   <aside class="mdc-drawer">
@@ -53,6 +61,8 @@
   </aside>
 
   <div class="mdc-drawer-app-content">
+
+
     <table>
       <thead>
         <tr>
@@ -93,6 +103,7 @@
       </tbody>
     </table>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+{
+  "name": "material-ui",
+  "version": "4.6.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmisca/app-alborz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rmisca/app-alborz/issues"
+  },
+  "homepage": "https://github.com/rmisca/app-alborz#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.6.0"
+  }
+}
