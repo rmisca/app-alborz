@@ -16,3 +16,4 @@ window.addEventListener('click', function(e) {
         select.classList.remove('open');
     }
 });
+
