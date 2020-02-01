@@ -1,3 +1,6 @@
+body {
+    height: 100vh;
+}
 #mr-logo-img {
     width: 140px;
     height: 50px;
