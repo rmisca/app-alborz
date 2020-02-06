@@ -65,3 +65,8 @@
         btns[j].addEventListener ("click", show)
     }
 })()
+function myButton {
+    var btn = document.createElement("BUTTON");
+    btn.innerHTML = "Echipa";
+    document.body.appendChild(btn);
+}
