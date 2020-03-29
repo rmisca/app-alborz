@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!-- Material Design for Bootstrap CSS -->
   <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
 
 </head>
@@ -35,67 +36,15 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a id="mr-login-button" class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a id="mr-register-button" class="nav-link" href="#">Inregistrare</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-
-
- 
-  <!-- <div class="mr-header">
-    <img id="mr-logo-img" src="assets/logo.jpg">
-    <ul id="mr-navigation-bar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#minifotbal">Minifotbal</a></li>
-      <li>
-        <div class="custom-select-wrapper">
-          <div class="custom-select">
-            <div class="custom-select__trigger"><span>Sezon</span>
-              <div class="arrow"></div>
-            </div>
-            <div class="custom-options">
-              <span class="custom-option selected" data-value="tesla">2017-2018</span>
-              <span class="custom-option" data-value="volvo">2018-2019</span>
-              <span class="custom-option" data-value="mercedes">2019-2020</span>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="mr-contact-menu-item"><a href="#contact">Contact</a></div>
-      </li>
-      <li>
-        <div class="mr-login-button">
-          <button type="button" id="login-menu-button" class="btn btn-primary">Login</button>
-        </div>
-      </li>
-    </ul>
-  </div> -->
-  <!-- <aside class="mdc-drawer">
-    <div class="mdc-drawer__header">
-      <h3 class="mdc-drawer__title">Alborz</h3>
-      <h6 class="mdc-drawer__subtitle">Campionat minifotbal</h6>
-    </div>
-    <div class="mdc-drawer__content">
-      <nav class="mdc-list">
-        <a class="mdc-list-item mr-click-event" href="#" aria-current="page">
-          <i class="fas fa-trophy material-icons mdc-list-item__graphic"></i>
-          <span class="mdc-list-item__text">Cupe</span>
-        </a>
-        <a class="mdc-list-item mr-click-event" href="#">
-          <i class="fas fa-futbol material-icons mdc-list-item__graphic"></i>
-          <span class="mdc-list-item__text">Campionat</span>
-        </a>
-        <a class="mdc-list-item mr-click-event" href="#">
-          <i class="fas fa-address-book material-icons mdc-list-item__graphic"></i>
-          <span class="mdc-list-item__text">Contact</span>
-        </a>
-      </nav>
-    </div>
-  </aside> -->
   <div class="bmd-layout-container bmd-drawer-f-l">
     <header class="bmd-layout-header">
       <div class="navbar navbar-light bg-faded">
@@ -115,9 +64,18 @@
         <a class="list-group-item">Contact</a>
       </ul>
     </div>
+
+    <div id="mr-alert" class="alert alert-success alert-dismissible fade" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
     <main class="bmd-layout-content">
       <div class="container">
-        <form>
+      <div id="mr-content"></div>
+        <div>
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Nume</label>
@@ -125,34 +83,34 @@
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">Prenume</label>
-              <input data-mr-player="firstname" type="text" class="form-control">
+              <input data-mr-player="firstname" name="firstname" type="text" class="form-control">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-12">
               <label for="inputAddress2">Nr. legitimatie</label>
-              <input data-mr-player="badge-number" type="text" class="form-control">
+              <input data-mr-player="badge-number" name="badge-number" type="text" class="form-control">
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-4">
               <label for="inputCity">Cartonase galbene</label>
-              <input data-mr-player="yellow-cards" type="number" class="form-control">
+              <input data-mr-player="yellow-cards" name="yellow-cards" type="number" class="form-control">
             </div>
             <div class="form-group col-md-4">
               <label for="inputState">Cartonase rosii</label>
-              <input data-mr-player="red-cards" type="number" class="form-control">
+              <input data-mr-player="red-cards" name="red-cards" type="number" class="form-control">
             </div>
             <div class="form-group col-md-4">
               <label for="inputZip">Goluri marcate</label>
-              <input data-mr-player="goals-scored" type="number" class="form-control">
+              <input data-mr-player="goals-scored" name="goals-scored" type="number" class="form-control">
             </div>
           </div>
           <div class="form-row">
             <div class="form-group col-md-12">
-              <select data-mr-player="choose-team" class="form-control">
+              <select data-mr-player="choose-team" name="choose-team" class="form-control">
                 <option selected>Alege echipa...</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -163,64 +121,29 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <div class="form-check">
-                <input data-mr-player="suspended" id="suspended-check" class="form-check-input" type="checkbox">
+                <input data-mr-player="suspended" name="suspended" id="suspended-check" class="form-check-input" type="checkbox">
                 <label class="form-check-label" for="suspended-check">
                   Suspendat
                 </label>
               </div>
             </div>
           </div>
-          <button id="mr-add-buton-player" type="submit" class="btn btn-success">Salveaza</button>
-        </form>
+          <button id="mr-add-button-player" class="btn btn-success">Salveaza</button>
+          <button id="mr-persist-button-player" class="btn btn-primary">Persista</button>
+        </div>
       </div>
     </main>
   </div>
   
   <div class="mdc-drawer-app-content">
-    <div id="mr-login-form" class="login-form">
-      <form>
-        <h2>Login</h2>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Username" required>
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Password" required>
-          </div>
-          <div class="form-group">
-            <button class="btn btn-primary btn-block">Login</button>
-          </div>
-          <div class="clearfix">
-            <label class="pull-left checkbox-inline">
-              <input type="checkbox">
-              Remember me
-            </label>
-            <a href="#" class="pull-right">Forgot Password?</a>
-          </div>
-      </form>
-      <p class="text-center">
-        <a href="#">Create an Account</a>
-      </p>
-    </div>
     <div id="dynamic-table"></div>
   </div>
   <script type="text/javascript" src="data/teams.js"></script>
+  <script src="mock/users.js"></script>
+  <script src="templates/register.html"></script>
   <script src="js/script.js"></script>
   <script src="js/work.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/7.8.0/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/7.8.0/firebase-analytics.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-  <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+  <script src="js/login.js"></script>
 </body>
 
 </html>
