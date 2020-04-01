@@ -91,6 +91,18 @@ tfoot {
 .login-form h2 {
     text-align: center;
 }
+.mr-red-border {
+    border:  1px solid red !important;
+}
+.mr-red-text {
+    color: red;
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: block;
+}
 .checkbox-inline {
     font-size: 0.9em;
 }

@@ -1,4 +1,4 @@
-<div class="login-form">
+<div id="mr-login-form" class="login-form ">
 <div>
     <h2 class="text-center">Sign in</h2>   
         <div class="form-group">
@@ -6,14 +6,22 @@
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
                 <input id="mr-email" type="text" class="form-control" name="email" placeholder="Email" required="required">
             </div>
+            <span id="mr-color-red-email" class="hide mr-red-text">Acest camp este obligatoriu</span>
         </div>
 		<div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                 <input id="mr-password" type="password" class="form-control" name="password" placeholder="Password" required="required">
             </div>
-        </div>        
-        <div class="form-group">
+            <span id="mr-color-red-password" class="hide mr-red-text">Acest camp este obligatoriu</span>
+        </div>
+    <div id="mr-failed-alert" class="alert alert-danger hide" role="alert">
+        Email sau parola gresita!
+    </div>
+    <div id="mr-success-alert" class="alert alert-success hide" role="alert">
+        V-ati logat cu succes!
+    </div>
+    <div class="form-group">
             <button id="mr-signin-button" class="btn btn-primary login-btn btn-block">Sign in</button>
         </div>
         <div class="clearfix">
