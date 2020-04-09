@@ -25,7 +25,6 @@ body {
     font-size: 17px;
 }
 .mr-header a:hover {
-    background: #ddd;
     color: rgb(0, 0, 0);
 }  
 #mr-navigation-bar > li {
@@ -91,6 +90,25 @@ tfoot {
 .login-form h2 {
     text-align: center;
 }
+.avatar {
+    margin: auto;
+    width: 45px;
+    border-radius: 100px;
+    height: 45px;
+    background: #448ed3;
+    bottom: -29px;
+    right: 50px;
+}
+#avatar {
+    height: 45px;
+    position: relative;
+    right: 8px;
+    bottom: 17px;
+}
+.register-form {
+    width: 385px;
+    margin: 30px auto;
+}
 .mr-red-border {
     border:  1px solid red !important;
 }
@@ -117,9 +135,6 @@ tfoot {
     border-bottom: 3px solid #0d5b28;
 }
 
-p:first-child {
-    font-size: 30px;
-}
 .mr-contact>h1 {
     font-size: 50px;
 }
@@ -133,9 +148,9 @@ p:first-child {
 .mr-sanction>h1 {
     font-size: 50px;
 }
-p:first-child {
-    font-size: 30px;
-}
+/*p:first-child {*/
+/*    font-size: 30px;*/
+/*}*/
 /* styles for 3rd party dropdown */
 .custom-select-wrapper {
     position: absolute;
@@ -267,3 +282,5 @@ p:first-child {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
+
+

@@ -24,7 +24,13 @@
           </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li id="mr-announcement-button" class="nav-item">
+            <a  class="nav-link" href="#">Anunt</a>
+          </li>
+          <li id="go-to-team" class="nav-item">
+            <a class="nav-link" href="#">Echipe</a>
+          </li>
+          <li id="mr-home-button" class="nav-item active">
             <a class="nav-link" href="#">Home
                   <span class="sr-only">(current)</span>
                 </a>
@@ -35,38 +41,47 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
-          <li class="nav-item">
-            <a id="mr-login-button" class="nav-link" href="#">Login</a>
+          <li id="mr-login-button" class="nav-item">
+            <a  class="nav-link" href="#">Login</a>
           </li>
-          <li class="nav-item">
-            <a id="mr-register-button" class="nav-link" href="#">Inregistrare</a>
+          <li id="mr-register-button" class="nav-item">
+            <a  class="nav-link" href="#">Inregistrare</a>
           </li>
-          <li class="nav-item ">
-            <a id="mr-logout-button" class="nav-link hide" href="#">Logout</a>
+          <li id="mr-logout-button" class="nav-item hide">
+            <a  class="nav-link " href="#">Logout</a>
           </li>
+          <li id="mr-welcome-user" class="nav-item hide">
+            <a  class="nav-link" href="#">Bine ai venit <span id="welcome-username"></span></a>
+          </li>
+          <li id="mr-welcome-avatar" class="nav-item avatar hide">
+            <a  class="nav-link" href="#"><img id="avatar">
+            </a>
+          </li>
+
+
         </ul>
       </div>
     </div>
   </nav>
-  <div class="bmd-layout-container bmd-drawer-f-l">
-    <header class="bmd-layout-header">
-      <div class="navbar navbar-light bg-faded">
-        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
-          <span class="sr-only">Toggle drawer</span>
-          <i class="material-icons">menu</i>
-        </button>
-      </div>
-    </header>
-    <div id="dw-s1" class="bmd-layout-drawer bg-faded">
-      <header>
-        <a class="navbar-brand">Campionat minifotbal</a>
-      </header>
-      <ul class="list-group">
-        <a class="list-group-item">Cupe</a>
-        <a class="list-group-item">Campionat</a>
-        <a class="list-group-item">Contact</a>
-      </ul>
-    </div>
+<!--  <div class="bmd-layout-container bmd-drawer-f-l">-->
+<!--    <header class="bmd-layout-header">-->
+<!--      <div class="navbar navbar-light bg-faded">-->
+<!--        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">-->
+<!--          <span class="sr-only">Toggle drawer</span>-->
+<!--          <i class="material-icons">menu</i>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--    </header>-->
+<!--    <div id="dw-s1" class="bmd-layout-drawer bg-faded">-->
+<!--      <header>-->
+<!--        <a class="navbar-brand">Campionat minifotbal</a>-->
+<!--      </header>-->
+<!--      <ul class="list-group">-->
+<!--        <a class="list-group-item">Cupe</a>-->
+<!--        <a class="list-group-item">Campionat</a>-->
+<!--        <a class="list-group-item">Contact</a>-->
+<!--      </ul>-->
+<!--    </div>-->
 
     <div id="mr-alert" class="alert alert-success alert-dismissible fade" role="alert">
       <strong>Holy guacamole!</strong> You should check in on some of those fields below.
@@ -75,10 +90,7 @@
       </button>
     </div>
     
-    <main class="bmd-layout-content">
-      <div id="mr-content" class="container">
-      </div>
-    </main>
+   <div id="mr-content" class="container"></div>
   </div>
   
   <div class="mdc-drawer-app-content">
@@ -87,9 +99,13 @@
   <script type="text/javascript" src="data/teams.js"></script>
   <script src="mock/users.js"></script>
   <script src="templates/register.html"></script>
+  <script src="js/init.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/announcement.js"></script>
+  <script src="js/auth.js"></script>
   <script src="js/script.js"></script>
   <script src="js/work.js"></script>
-  <script src="js/login.js"></script>
 </body>
 
 </html>
