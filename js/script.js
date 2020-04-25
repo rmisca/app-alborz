@@ -11,6 +11,8 @@
     document.getElementById("mr-home-button").addEventListener("click", util.loadHome)
     document.getElementById("go-to-team").addEventListener("click", util.loadTeam)
     document.getElementById("mr-announcement-button").addEventListener("click", announce.loadAnnouncement)
+    document.getElementById("mr-contact-button").addEventListener("click", util.loadContactPage)
+
     let players = [];
 
     function addPlayer () {

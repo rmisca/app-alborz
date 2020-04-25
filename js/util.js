@@ -70,6 +70,9 @@
             const alert = document.getElementById('mr-alert');
             alert.classList.add("show");
         }
-
+        this.loadContactPage = () => {
+            const container = this.getContainer();
+            this.loadPageIntoContainer(container, "templates/contact.html");
+        }
     }
 })()
