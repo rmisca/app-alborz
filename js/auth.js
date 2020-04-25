@@ -14,12 +14,14 @@
             const registerButton = document.getElementById("mr-registration-button");
             this.util.addEventListeners(registerButton, "click", this.register);
         },
-        this.login = () => {
+        this.login = isFromRegister => {
             const email = document.getElementById("mr-email").value;
             const password = document.getElementById("mr-password").value;
             const dbusers = JSON.parse(localStorage.users);
             if (this.validation.borderFailedLogin()) {
-                this.util.clearAlerts();
+                if (!isFromRegister) {
+                    this.util.clearAlerts();
+                }
                 for (let i = 0; i < dbusers.length; i++ ) {
                     if (dbusers[i].email === email && dbusers[i].password === password) {
                         this.setLoggedInUser(dbusers[i]);
@@ -28,7 +30,7 @@
                         this.util.loadHome();
                         break;
                     } else {
-                        if (dbusers.length - 1 === i) {
+                        if (dbusers.length - 1 === i && !isFromRegister) {
                             this.util.alertFailedMessage();
                         }
                     }
@@ -82,8 +84,8 @@
             this.register = () => {
                 const firstname = document.getElementById("firstname").value;
                 const lastname = document.getElementById("lastname").value;
-                const email = document.getElementById("email").value;
-                const password = document.getElementById("password").value;
+                const email = document.getElementById("mr-email").value;
+                const password = document.getElementById("mr-password").value;
                 const confirmPassword = document.getElementById("confirm-password").value;
                 const user = {};
                 const dbusers = JSON.parse(localStorage.users);
@@ -94,9 +96,13 @@
                 user.confirmPassword = confirmPassword;
                 dbusers.push(user);
                 localStorage.setItem("users", JSON.stringify(dbusers));
+                this.loginAndRedirectHome();
             }
 
+        this.loginAndRedirectHome = () => {
+            this.login(true);
 
+        }
     }
 
 })()
