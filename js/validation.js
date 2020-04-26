@@ -24,6 +24,19 @@
 
             }
             return isValid;
+        },
+        this.borderFailed = (element, errorMessageElement) => {
+            let isValid = true;
+            if (element.value === "") {
+                element.classList.add("mr-red-border");
+                errorMessageElement.classList.remove("hide");
+                isValid = false;
+            } else {
+                element.classList.remove("mr-red-border");
+                errorMessageElement.classList.add("hide");
+            }
+            return isValid;
         }
     }
+
 })()
