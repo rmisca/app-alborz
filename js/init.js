@@ -2,7 +2,7 @@
     window.App = {
         "Auth": {},
         "Util": {},
-        "Announcement": {},
+        "Core": {},
         "Validation": {}
     };
 })()

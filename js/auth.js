@@ -82,13 +82,6 @@
             return localStorage.loggedUser;
         },
             this.register = () => {
-                //const firstname = document.getElementById("firstname").value;
-                // const lastname = document.getElementById("lastname").value;
-                // const email = document.getElementById("mr-email").value;
-                // const password = document.getElementById("mr-password").value;
-                // const confirmPassword = document.getElementById("confirm-password").value;
-
-                //
                 const firstname = document.getElementById("firstname");
                 const fistnameErrMsg = document.getElementById("mr-color-red-firstname");
                 const lastname = document.getElementById("lastname");
@@ -99,6 +92,7 @@
                 const passwordErrMsg = document.getElementById("mr-color-red-password");
                 const confirmPassword = document.getElementById("mr-confirm-password-register");
                 const confirmPasswordErrMsg = document.getElementById("mr-color-red-confirm-password-register");
+
                 const user = {};
                 const dbusers = JSON.parse(localStorage.users);
                 const isSuccessFirstname = this.validation.borderFailed(firstname, fistnameErrMsg);
@@ -117,7 +111,6 @@
                     localStorage.setItem("users", JSON.stringify(dbusers));
                     this.loginAndRedirectHome();
                 }
-                if("emial.value.)
             }
 
         this.loginAndRedirectHome = () => {

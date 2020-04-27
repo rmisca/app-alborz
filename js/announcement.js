@@ -1,5 +1,5 @@
 (function() {
-    App.Announcement.Announce = function() {
+    App.Core.Announcement = function() {
         this.announcements = [],
         this.util = new App.Util.Utilities(),
         this.loadAnnouncement = () => {
@@ -15,8 +15,6 @@
             announcement.addedDate = Date.now();
             this.announcements.push(announcement);
             localStorage.setItem("announcements", JSON.stringify(this.announcements));
-            document.getElementById("mr-announcement-title").value = "";
-            document.getElementById("mr-announcement-description").value = "";
             this.util.loadHome();
         }
 
