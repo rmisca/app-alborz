@@ -36,6 +36,9 @@
                 errorMessageElement.classList.add("hide");
             }
             return isValid;
+        },
+        this.isInputFilled = (inputElementValue) => {
+             return inputElementValue !== "";
         }
     }
 
