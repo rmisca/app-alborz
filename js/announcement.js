@@ -15,7 +15,9 @@
             announcement.addedDate = Date.now();
             this.announcements.push(announcement);
             localStorage.setItem("announcements", JSON.stringify(this.announcements));
-            this.util.loadHome();
+            const elementsToClear = document.querySelectorAll("[data-mr-announcement]");
+            this.util.clearInputs(elementsToClear);
+            // this.util.loadHome();
         }
 
     }

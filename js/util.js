@@ -61,9 +61,12 @@
             for(let i = 0; i < playerInputs.length; i++) {
                 if(playerInputs[i].name === "suspended") {
                     playerInputs[i].checked = false;
+                } else if (playerInputs[i].name === "choose-team") {
+                    playerInputs[i].selectedIndex = 0;
                 } else {
                     playerInputs[i].value = "";
                 }
+
             }
         },
         this.showSuccessMessage = () => {

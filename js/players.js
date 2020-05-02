@@ -30,6 +30,8 @@
                 player.suspendedCheck = suspendedCheck;
                 this.players.push(player);
                 localStorage.setItem("players", JSON.stringify(this.players));
+                const elementsToClear = document.querySelectorAll("[data-mr-player]");
+                this.util.clearInputs(elementsToClear);
             } else {
                 this.addRedBorder();
             }
