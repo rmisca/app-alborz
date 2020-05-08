@@ -7,10 +7,17 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!-- Material Design for Bootstrap CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<!--  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">-->
+<!--  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">-->
 
-
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +39,9 @@
           </li>
           <li id="add-team-player" class="nav-item">
             <a class="nav-link" href="#">Adauga jucator</a>
+          </li>
+          <li id="add-team" class="nav-item">
+            <a class="nav-link" href="#">Adauga echipa</a>
           </li>
           <li id="mr-home-button" class="nav-item active">
             <a class="nav-link" href="#">Home
@@ -66,26 +76,6 @@
       </div>
     </div>
   </nav>
-<!--  <div class="bmd-layout-container bmd-drawer-f-l">-->
-<!--    <header class="bmd-layout-header">-->
-<!--      <div class="navbar navbar-light bg-faded">-->
-<!--        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">-->
-<!--          <span class="sr-only">Toggle drawer</span>-->
-<!--          <i class="material-icons">menu</i>-->
-<!--        </button>-->
-<!--      </div>-->
-<!--    </header>-->
-<!--    <div id="dw-s1" class="bmd-layout-drawer bg-faded">-->
-<!--      <header>-->
-<!--        <a class="navbar-brand">Campionat minifotbal</a>-->
-<!--      </header>-->
-<!--      <ul class="list-group">-->
-<!--        <a class="list-group-item">Cupe</a>-->
-<!--        <a class="list-group-item">Campionat</a>-->
-<!--        <a class="list-group-item">Contact</a>-->
-<!--      </ul>-->
-<!--    </div>-->
-
     <div id="mr-alert" class="alert alert-success alert-dismissible fade" role="alert">
       <strong>Holy guacamole!</strong> You should check in on some of those fields below.
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -94,11 +84,19 @@
     </div>
     
    <div id="mr-content" class="container"></div>
-  </div>
+  </nav>
   
   <div class="mdc-drawer-app-content">
     <div id="dynamic-table"></div>
   </div>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
   <script type="text/javascript" src="data/teams.js"></script>
   <script src="mock/users.js"></script>
   <script src="js/init.js"></script>
@@ -107,6 +105,7 @@
   <script src="js/announcement.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/players.js"></script>
+  <script src="js/teams.js"></script>
   <script src="js/script.js"></script>
   <script src="js/work.js"></script>
 </body>
